@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Document   : Ingreso de datos
+    Created on : 03-09-2016
+    Author     : Daniel Mendoza
+-->
+<html>
+    <head>
+        <title>Ingreso de datos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body><center>
+        <div class="exp">
+            <center>
+                <img src="css/img/logo.png" align="center" class="logo" ><br><br>
+                <h2>Por favor, ingrese sus datos</h2>
+            </center>
+            <br><br>
+        <form action="ServletPersona" method="post">
+            <table cellspacing="8">
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="Nombre"></td>
+                </tr>
+                <tr>
+                    <td>Apellido paterno:</td>
+                    <td><input type="text" name="ApellidoPat"></td>
+                </tr>
+                <tr>
+                    <td>Apellido materno:</td>
+                    <td><input type="text" name="ApellidoMat"></td>
+                </tr>
+                <tr>
+                    <td>Genero:</td>
+                    <td><select name="Genero">
+                    <option>Femenino</option>
+                    <option>Masculino</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Edad:</td>
+                    <td><input name="Edad" type="number" min="1" max="120"></td>
+                </tr>
+                <tr>
+                    <td>Estatura</td>
+                    <td><input type="number" name="Estatura" placeholder="En Centimetros" min="70" max="270"></td>
+                </tr>
+                <tr>
+                    <td>Peso corporal:</td>
+                    <td><input type="number" name="Peso" placeholder="En kilogramos" min="7" ></td>
+                </tr>
+            </table>
+            
+            <br><br>
+            <center><h2>Ingrese su peso y altura de los ultimos 5 meses</h2></center>
+            <br>
+            <table cellspacing="15" >
+                <tr>
+                    <th>1° Mes</th>
+                    <th>2° Mes</th>
+                    <th>3° Mes</th>
+                    <th>4° Mes</th>
+                    <th>5° Mes</th>
+                </tr>
+                <tr>
+                    <td>Peso corporal:
+                        <br><input type="number" name="Peso1" min="8" max="300" placeholder="En kilogramos"></td>
+                    <td>Peso corporal:
+                        <br><input type="number" name="Peso2" min="8" max="300" placeholder="En kilogramos"></td>
+                    <td>Peso corporal:
+                        <br><input type="number" name="Peso3" min="8" max="300" placeholder="En kilogramos"></td>
+                    <td>Peso corporal:
+                        <br><input type="number" name="Peso4" min="8" max="300" placeholder="En kilogramos"></td>
+                    <td>Peso corporal:
+                        <br><input type="number" name="Peso5" min="8" max="300" placeholder="En kilogramos"></td>
+                </tr>
+                <tr>
+                    <td>Estatura: 
+                        <br><input type="number" name="Estatura1" min="50" max="270" placeholder="En Centimetros"></td>
+                    <td>Estatura: 
+                        <br><input type="number" name="Estatura2" min="50" max="270" placeholder="En Centimetros"></td>
+                    <td>Estatura: 
+                        <br><input type="number" name="Estatura3" min="50" max="270" placeholder="En Centimetros"></td>
+                    <td>Estatura: 
+                        <br><input type="number" name="Estatura4" min="50" max="270" placeholder="En Centimetros"></td>
+                    <td>Estatura: 
+                        <br><input type="number" name="Estatura5" min="50" max="270" placeholder="En Centimetros"></td>
+                </tr>
+            </table>
+            <br><input type="submit" value="Enviar">           
+        </form>
+   </div></center></body>
+</html>
