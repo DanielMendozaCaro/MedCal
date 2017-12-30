@@ -127,7 +127,7 @@ public class ServletPersona extends HttpServlet {
         } // fin bloque for
  
         
-            
+            //declaracion de variables para 'parsear'
             int edadInt = 0;
             double estaturaDbl= 0;
             double pesoDbl= 0;
