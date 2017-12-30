@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Daniel Mendoza
+ * @author Daniel Mendoza 
  */
 @WebServlet(name = "ServletPersona", urlPatterns = {"/ServletPersona"})
 public class ServletPersona extends HttpServlet {
@@ -209,7 +209,7 @@ public class ServletPersona extends HttpServlet {
             //enviar datos a constructor de la clase persona
            Persona per = new Persona(nombre, apellidoPat, apellidoMat, genero, edadInt, estaturaDbl, pesoDbl);
            
-           //enviar datos a la pagina jsp y redireccionar
+           //enviar datos a la pagina jsp 
            request.getSession().setAttribute("nombre",per.getNombre() + " " + per.getApellidoPat() + " " + per.getApellidoMat());
            request.getSession().setAttribute("genero", per.getGenero());
            request.getSession().setAttribute("edad", edad);
@@ -226,7 +226,7 @@ public class ServletPersona extends HttpServlet {
            request.getSession().setAttribute("resultado", resultado);
            request.getSession().setAttribute("promedioEstatura", df.format(promedioEstatura));
            
-           
+           //redireccionar a jsp
            request.getRequestDispatcher("DatosPersona.jsp").forward(request, response);
             
         } //fin bloque if-else
